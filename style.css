@@ -1,7 +1,9 @@
+/* Include padding and borders in each element's total width and height. */
 * {
   box-sizing: border-box;
 }
 
+/* Set the overall page font, colors, and minimum height. */
 body {
   margin: 0;
   min-height: 100vh;
@@ -10,6 +12,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Center the card in the available page space. */
 .page {
   min-height: 100vh;
   display: flex;
@@ -19,6 +22,7 @@ body {
   padding: 32px 16px 20px;
 }
 
+/* Style the white panel that contains the page content. */
 .card {
   width: 100%;
   max-width: 420px;
@@ -29,6 +33,7 @@ body {
   box-shadow: 0 8px 24px rgba(28, 50, 32, 0.07);
 }
 
+/* Center the university name and logo text. */
 .brand {
   margin-bottom: 30px;
   text-align: center;
@@ -47,6 +52,7 @@ body {
   font-size: 13px;
 }
 
+/* Style the page heading and introductory text. */
 h1 {
   margin: 0 0 8px;
   font-size: 25px;
@@ -58,11 +64,13 @@ h1 {
   font-size: 14px;
 }
 
+/* Stack form fields vertically. */
 form {
   display: flex;
   flex-direction: column;
 }
 
+/* Style the form labels and input fields. */
 label {
   margin: 0 0 7px;
   font-size: 14px;
@@ -83,6 +91,7 @@ input:focus {
   outline: 2px solid rgba(23, 107, 58, 0.15);
 }
 
+/* Style the main action button and its hover state. */
 button {
   margin-top: 4px;
   padding: 12px;
@@ -99,6 +108,7 @@ button:hover {
   background: #11552e;
 }
 
+/* Style the account-switch text and its links. */
 .switch-page {
   margin: 22px 0 0;
   color: #68736a;
@@ -116,12 +126,14 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Style the small page footer. */
 footer {
   margin-top: 20px;
   color: #788279;
   font-size: 12px;
 }
 
+/* Reduce card padding on narrow screens. */
 @media (max-width: 480px) {
   .card {
     padding: 28px 22px;
